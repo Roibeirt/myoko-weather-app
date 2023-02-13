@@ -7,6 +7,12 @@
     <title>Myoko Weather</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="header">
@@ -22,7 +28,108 @@
         <button class="nav-button">Kurohime</button>
       </nav>
     </div>
-    <div id="content"></div>
+    <div id="content">
+      <div class="current-weather-container" id="current-weather-lift-top">
+        <div class="current-weather-title">Top Lift:</div>
+        <div class="current-weather-data">
+          <div id="current-weather-icon">
+            <img
+              id="current-weather-image-top"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </div>
+          <div class="current-weather-temp" id="current-weather-temp-top">
+            3<sup>°C</sup>
+          </div>
+          <div
+            class="current-weather-description"
+            id="current-weather-description-top"
+          >
+            Windy
+          </div>
+          <div class="current-weather-min-max-temp">
+            <table class="current-weather-min-max-temp-table">
+              <tr>
+                <th>Maximum Temp:</th>
+                <td id="current-weather-max-temp-top">4°C</td>
+              </tr>
+              <tr>
+                <th>Minimum Temp:</th>
+                <td id="current-weather-min-temp-top">3°C</td>
+              </tr>
+            </table>
+          </div>
+          <div class="current-weather-wind">
+            <table class="current-weather-wind-table">
+              <tr>
+                <th>Wind Speed:</th>
+                <td id="current-weather-wind-speed-top">4 m/s</td>
+              </tr>
+              <tr>
+                <th>Wind Direction:</th>
+                <td id="current-weather-wind-direction-top">3°</td>
+              </tr>
+            </table>
+          </div>
+          <div
+            class="current-weather-visibility"
+            id="current-weather-visibility-top"
+          >
+            Visibility: 220m
+          </div>
+        </div>
+      </div>
+      <div class="current-weather-container" id="current-weather-base">
+        <div class="current-weather-title">Base:</div>
+        <div class="current-weather-data">
+          <div id="current-weather-icon">
+            <img
+              id="current-weather-image-base"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+            />
+          </div>
+          <div class="current-weather-temp" id="current-weather-temp-base">
+            3<sup>°C</sup>
+          </div>
+          <div
+            class="current-weather-description"
+            id="current-weather-description-base"
+          >
+            Windy
+          </div>
+          <div class="current-weather-min-max-temp">
+            <table class="current-weather-min-max-temp-table">
+              <tr>
+                <th>Maximum Temp:</th>
+                <td id="current-weather-max-temp-base">4°C</td>
+              </tr>
+              <tr>
+                <th>Minimum Temp:</th>
+                <td id="current-weather-min-temp-base">3°C</td>
+              </tr>
+            </table>
+          </div>
+          <div class="current-weather-wind">
+            <table class="current-weather-wind-table">
+              <tr>
+                <th>Wind Speed:</th>
+                <td id="current-weather-wind-speed-base">4 m/s</td>
+              </tr>
+              <tr>
+                <th>Wind Direction:</th>
+                <td id="current-weather-wind-direction-base">3°</td>
+              </tr>
+            </table>
+          </div>
+          <div
+            class="current-weather-visibility"
+            id="current-weather-visibility-base"
+          >
+            Visibility: 550m
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="footer">
       <nav role="navigation" class="link-list-horizontal">
         <a href="">Github Link</a>
