@@ -16,22 +16,27 @@
   </head>
   <body>
     <div id="header">
-      <img src="" alt="Myoko Weather Logo" id="main-logo" />
+      <div id="header-text">Myoko Weather</div>
     </div>
     <div id="sidebar">
       <nav role="navigation" class="link-list-vertical">
-        <button class="nav-button">Kanko</button>
-        <button class="nav-button">Onsen</button>
-        <button class="nav-button">Suginohara</button>
-        <button class="nav-button">Ikenotaira</button>
-        <button class="nav-button">Arai</button>
-        <button class="nav-button">Kurohime</button>
+        <button class="nav-button" id="akakurakanko-button">
+          Akakura Kanko
+        </button>
+        <button class="nav-button" id="akakuraonsen-button">
+          Akakura Onsen
+        </button>
+        <button class="nav-button" id="suginohara-button">Suginohara</button>
+        <button class="nav-button" id="ikenotaira-button">Ikenotaira</button>
+        <button class="nav-button" id="arai-button">Arai</button>
+        <button class="nav-button" id="kurohime-button">Kurohime</button>
+        <button class="nav-button" id="seki-button">Seki Onsen</button>
       </nav>
     </div>
     <div id="content">
       <div class="current-weather-container" id="current-weather-lift-top">
         <div class="current-weather-title">Top Lift:</div>
-        <div class="current-weather-data">
+        <div class="current-weather-data" id="current-weather-lift-top-data">
           <div id="current-weather-icon">
             <img
               id="current-weather-image-top"
@@ -77,11 +82,15 @@
           >
             Visibility: 220m
           </div>
+          <div
+            class="current-weather-snow1hr"
+            id="current-weather-snow1hr-top"
+          ></div>
         </div>
       </div>
       <div class="current-weather-container" id="current-weather-base">
         <div class="current-weather-title">Base:</div>
-        <div class="current-weather-data">
+        <div class="current-weather-data" id="current-weather-base-data">
           <div id="current-weather-icon">
             <img
               id="current-weather-image-base"
@@ -127,13 +136,17 @@
           >
             Visibility: 550m
           </div>
+          <div
+            class="current-weather-snow1hr"
+            id="current-weather-snow1hr-base"
+          ></div>
         </div>
       </div>
     </div>
     <div id="footer">
       <nav role="navigation" class="link-list-horizontal">
-        <a href="">Github Link</a>
-        <a href="">Buy me a Coffee</a>
+        <a href="https://github.com/Roibeirt">Github</a>
+        <a href="https://ko-fi.com/roibeirt">Buy me a Coffee</a>
       </nav>
     </div>
   </body>
